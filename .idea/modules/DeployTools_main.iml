@@ -21,6 +21,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="servlet-api" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:3.7.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.12.0" level="project" />
+    <orderEntry type="library" name="jsp-api" level="application" />
   </component>
 </module>

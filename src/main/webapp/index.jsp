@@ -26,7 +26,7 @@
                 <div class="control-group">
                     <label class="control-label" for="inputBoshDirectorIP">Bosh DirectorIP：</label>
                     <div class="controls">
-                        <input id="inputBoshDirectorIP" name="BoshDirectorIP" type="text"/>
+                        <input id="inputBoshDirectorIP" name="BoshDirectorIP" value="172.17.200.136" type="text"/>
                     </div>
                 </div>
                 <div class="control-group">
