@@ -1,7 +1,8 @@
 package com.rengu.servlet;
 
-import com.rengu.util.Tools;
-import javafx.scene.control.Alert;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -17,10 +18,15 @@ public class DoLoginController extends HttpServlet {
         String username = request.getParameter("inputBoshDirectorUsername");
         String password = request.getParameter("inputBoshDirectorPassword");
         String boshDirectorIP = request.getParameter("BoshDirectorIP");
-        int statueCode = Tools.getLoginStatusCode(username , password, boshDirectorIP);
-        switch (statueCode){
-            default:System.out.println(statueCode);break;
-        }
+
+        OkHttpClient okHttpClient = new OkHttpClient();
+
+        Request okHttpRequest = new Request.Builder()
+                .url("https://" + username + ":" + password + "@" + boshDirectorIP + ":25555/tasks")
+                .get()
+                .build();
+
+        Response okHttpResponse = okHttpClient.newCall(okHttpRequest).execute();
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

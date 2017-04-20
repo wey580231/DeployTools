@@ -32,13 +32,15 @@
                 <div class="control-group">
                     <label class="control-label" for="inputBoshDirectorUsername">Bosh Director用户名：</label>
                     <div class="controls">
-                        <input id="inputBoshDirectorUsername" name="inputBoshDirectorUsername" type="text"/>
+                        <input id="inputBoshDirectorUsername" name="inputBoshDirectorUsername" value="admin"
+                               type="text"/>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="inputBoshDirectorPassword">Bosh Director密码：</label>
                     <div class="controls">
-                        <input id="inputBoshDirectorPassword" name="inputBoshDirectorPassword" type="password"/>
+                        <input id="inputBoshDirectorPassword" name="inputBoshDirectorPassword" value="admin"
+                               type="password"/>
                     </div>
                 </div>
                 <div class="control-group">
